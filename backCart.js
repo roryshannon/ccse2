@@ -1,6 +1,3 @@
-// how tf do i get the cart information from here yo and how do i make a server like wtf
-
-
 const cartProducts = [{
     name: 'jumper',
     image: 'images/jumper.jpg',
