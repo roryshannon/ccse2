@@ -21,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Run Snyk Security Scan
-      uses: snyk/actions@v2
+      uses: snyk/actions@v1
       with:
         args: test
       env:
