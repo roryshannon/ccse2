@@ -20,9 +20,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Install Snyk and Run Security Scan
-      run: |
-        npm install -g snyk
-        snyk test || true
+    - name: Run Snyk Security Scan
+      uses: snyk/actions@v2
+      with:
+        args: test
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
