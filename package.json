@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "sqlite3": "^5.1.7"
+  },
+  "overrides": {
+  "brace-expansion": "^1.1.12",
+  "tar-fs": "^2.1.3"
   }
 }
+
