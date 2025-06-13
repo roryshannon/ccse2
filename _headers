@@ -6,13 +6,18 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Permissions-Policy: interest-cohort=()
 
-/index.html
-  Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+/cart
+  Cache-Control: no-cache, no-store, must-revalidate, private
+  Pragma: no-cache
+  Expires: 0
+
+/checkout
+  Cache-Control: no-cache, no-store, must-revalidate, private
   Pragma: no-cache
   Expires: 0
 
 /*.html
-  Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+  Cache-Control: no-cache, no-store, must-revalidate, private
   Pragma: no-cache
   Expires: 0
 
